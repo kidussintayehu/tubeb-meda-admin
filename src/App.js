@@ -17,7 +17,9 @@ import Login from "./pages/login/Login"
 import ErrorMessage from "./pages/message/error";
 import SuccessMessage from "./pages/message/success";
 function App() {
-  const admin = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.isAdmin
+  // const admin = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.isAdmin
+const admin =  JSON.parse(JSON.parse(localStorage.getItem("persist:root"))?.user || "{}")?.currentUser?.isAdmin;
+
   // const admin = useSelector((state) => state.user);
   // const admin = false
   console.log("admin",admin);

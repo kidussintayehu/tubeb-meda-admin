@@ -3,7 +3,6 @@ import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
 // import { userRows } from "../../dummyData";
 import { Link } from "react-router-dom";
-import axios from "axios"
 import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
 // import { userData, userRows } from "../../dummyData";

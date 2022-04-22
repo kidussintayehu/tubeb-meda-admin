@@ -22,19 +22,22 @@ export default function User() {
   // const [body, setBody] = useState({})
 
 
+ 
   useEffect( async () => {
-
-    try {
+    async function fetchData() {
       const res = await userRequest.get(`/user/find/${userId}`);
       // 
       setData(res.data)
 
 
-    } catch (err) {
-      console.log(err);
     }
+    // try {
+     
+    // } catch (err) {
+    //   console.log(err);
+    // }
 
-
+    fetchData();
   }, [userId]);
 
   const handleClick = async (e) => {

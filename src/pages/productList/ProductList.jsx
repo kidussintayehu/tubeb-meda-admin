@@ -4,7 +4,7 @@ import { DeleteOutline } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import { useEffect , useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteProduct, getProducts } from "../../redux/apiCalls";
+import {  getProducts } from "../../redux/apiCalls";
 // import { userRequest } from "../../../../cleint/src/requestMethod";
 import axios from 'axios'
 

@@ -20,7 +20,7 @@ export default function ProductList() {
   const handleDelete = async (id) => {
     // deleteProduct(id, dispatch);
     console.log("axios is about to lounch")
-    const res = await axios.delete(`http://localhost:5050/api/products/${id}`);
+    const res = await axios.delete(`"https://tibebmeda.herokuapp.com/api/products/${id}`);
     console.log("its about to be delete", res.data);
     setMessage("products has been deleted")
 

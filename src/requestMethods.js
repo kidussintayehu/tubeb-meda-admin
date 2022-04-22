@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5050/api/";
+const BASE_URL = "https://tibebmeda.herokuapp.com/api/";
 const TOKEN = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken;
 // console.log(TOKEN);
 // const TOKEN = true
